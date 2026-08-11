@@ -11,7 +11,6 @@ terraform {
 
 provider "azurerm" {
   features {}  
-  subscription_id = var.subscription_id  # opcional, se não usar `az login` com sub default
 }
 
 resource "azurerm_resource_group" "rg" {
